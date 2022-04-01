@@ -1,0 +1,296 @@
+.ui-splash-content-header{
+    width: 100%;
+    height: auto;
+    background-color: #121614;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-items: center;
+}
+
+.ui-splash-title-content-header2{
+    width: 100%;
+    height: auto;
+    font-size: 38px;
+    font-family: "nunito";
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.ui-splash-content-display-messages-global{
+    width: 99%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 205px;
+    left: 0;
+    justify-items: center;
+    
+}
+
+.ui-splash-content-display-starter-global{
+    width: 99%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 345px;
+    left: 0;
+    justify-items: center;
+    
+}
+
+.ui-splash-content-display-messages-global-tips{
+    width: auto;
+    overflow: hidden;
+    width: 99%;
+    height: auto;
+    background-color: transparent;
+    display: block;
+    flex-direction: row;
+    cursor: pointer;
+    justify-items: center;
+    border: 1px solid transparent;
+    padding-bottom: 10px;
+}
+
+.ui-splash-content-display-messages-global-tips2{
+    width: auto;
+    overflow: hidden;
+    width: 99%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-items: center;
+    border: 1px solid transparent;
+}
+
+.ui-splash-content-display-users-global-tips2{
+    width: auto;
+    overflow: hidden;
+    width: 99%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-items: center;
+    border: 1px solid transparent;
+}
+
+.ui-splash-content-display-messages-sender-ico{
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    flex-direction: column;
+    justify-items: center;
+    border: 1px solid #bbbbbb69;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ui-splash-content-display-messages-sender-group{
+    width: 100%;
+    height: 50px;
+    max-width: 100%;
+    background-color: transparent;
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #a5a5a538;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.ui-splash-content-wrap-title{
+    position: relative;
+    display: flex;
+    float: left;
+    background-color: transparent;
+}
+
+.ui-splash-content-display-messages-sender-group2{
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    flex-direction: column;
+    justify-items: right;
+    align-items: center;
+    border: 1px solid #a5a5a538;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@font-face {
+    font-family: "open";
+    font-weight: bold;
+    src: url("./font/PatrickHandSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ping";
+    src: url("./font/Noto/NotoSans-Regular.ttf");
+}
+
+.ui-splash-btn-start-message-fist{
+    font-size: "ping";
+    width: 90px;
+    height: 40px;
+    border: 1px solid #a348a5;
+    background-color: #a348a5;
+    font-size: 15.5px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.ui-splash-content-display-messages-tips-title{
+    font-family: "open";
+    font-size: 18px;
+    text-decoration: none;
+    color: #0000009e;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ui-splash-content-display-messages-tips-heure{
+    font-family: "ping";
+    font-size: 17px;
+    position: relative;
+    margin: 10px;
+    padding: 8px;
+    color: #0000009e;
+    background-color: #6efff5;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: relative;
+    left: -20px;
+}
+
+.ui-splash-content-display-messages-tips-heure-form{
+    font-family: "ping";
+    font-size: 16px;
+    border: 1px solid #caff6e42;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #caff6e42;
+    color: black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: relative;
+    float: right;
+    left: calc((100%) - 110%);
+    top: 10px;
+}
+
+@font-face {
+    font-family: "pontano";
+    src: url("./font/PontanoSans-Regular.ttf");
+}
+.ui-splash-content-title-bar-start-conversation{
+    width: 110%;
+    font-family: "pontano";
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    height: 30px;
+    overflow: hidden;
+    color: #535445;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 544px) {
+    .ui-splash-content-display-messages-global{
+        top: 235px;   
+    }
+}
+
+@media (max-width: 430px) {
+    .ui-splash-content-display-messages-global{
+        top: 205px;   
+    }
+
+    .ui-splash-content-display-messages-tips-heure-form{
+        font-size: 12px;
+        top: 12px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .ui-splash-content-display-messages-global{
+        top: 205px;   
+    }
+
+    .ui-splash-content-display-messages-tips-heure-form{
+        font-size: 10px;
+        top: 8px;
+    }
+
+    .ui-splash-content-display-messages-tips-heure{
+        font-family: "ping";
+        font-size: 12px;
+        position: relative;
+        margin: 10px;
+        padding: 8px;
+        color: #0000009e;
+        background-color: #6efff5;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (max-width: 333px) {
+    .ui-splash-title-content-header2{
+        width: 100%;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,389 @@
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange; 
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #362f2f;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: white;
+    border: 3px scroll white;
+}
+
+::-webkit-scrollbar-button {
+    border-radius: 50px;
+    background: #362f2f;
+    border: 3px scroll #362f2f;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 50px;
+    background: blue;
+    border: 3px scroll blue;
+}
+
+.ui-splash-content-header-sender{
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ui-splash-content-header-sender span{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 29px;
+    float: left;
+    position: relative;
+    left: 10px;
+    background-color: blue;
+    top: 12px;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border: 1px solid #464646;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ui-splash-content-header-icon-span-sender{
+    width: 60px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    float: right;
+}
+
+.ui-splash-content-header-icon-span-message-support{
+    width: 100%;
+    height: calc((100%) - 9%);
+    background-color: #141313;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    bottom: 0;
+}
+
+.ui-splash-content-header-send-message-support{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.ui-splash-content-message-docs{
+    width: 100%;
+    height: calc((100%) - 20%);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "pingfang";
+    src: url("./font/pingfang/PingFang\ SC\ Regular.ttf");
+}
+
+.ui-splash-content-message-tips1{
+    max-width: max-content;
+    height: auto;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ff7171;
+    background-color: #ff7171;
+    font-family: "pingfang";
+    left: 5px;
+    align-items: center;
+    overflow: hidden;
+    word-break: keep-all;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    white-space: normal;
+    margin-top: 5px;
+}
+
+
+.ui-splash-content-message-tips1 .ui-splash-content-heure-message{
+    position: relative;
+    padding: 2px;
+    border-radius: 2px;
+    left: 4px;
+    color: #ffffff94;
+}
+
+.ui-splash-content-message-tips2{
+    width: auto;
+    max-width: max-content;
+    height: auto;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: white;
+    display: block;
+    position: relative;
+    font-family: "pingfang";
+    left: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    word-break: keep-all;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    white-space: normal;
+}
+
+.ui-splash-content-message-tips2-overview{
+    transition: 0.3s;
+    animation: sendAnimationMesage 0.1s ease forwards;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-animation: sendAnimationMesage 0.1s ease forwards;
+}
+
+@keyframes sendAnimationMesage {
+    from{
+        opacity: 0.5;
+        top: 20px;
+    }
+    to{
+        opacity: 1;
+        top: -1px;
+    }
+}
+
+.ui-splash-content-message-tips2 .ui-splash-content-heure-message{
+    position: relative;
+    padding: 2px;
+    border-radius: 2px;
+    left: 4px;
+    color: #060101a1;
+}
+
+
+.ui-splash-content-date-message1{
+    position: relative;
+    padding: 2px;
+    border-radius: 2px;
+    color: #e4c6ff73;
+    display: block;
+    background-color: #2c2727;
+    font-family: "pingfang";
+    margin: 5px;
+    font-size: 13px;
+    width: auto;
+    max-width: max-content;
+    height: auto;
+}
+
+.ui-splash-content-date-message2{
+    position: relative;
+    padding: 2px;
+    border-radius: 2px;
+    left: 4px;
+    color: #e4c6ff73;
+    width: auto;
+    max-width: max-content;
+    height: auto;
+    background-color: #2c2727;
+    font-family: "pingfang";
+    margin-top: 5px;
+    font-size: 13px;
+    display: inline-grid;
+}
+
+.ui-splash-content-sender-support{
+    width: 700px;
+    height: 40px;
+    background-color: #424242;
+    border: 1px solid #424242;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.ui-splash-content-sender-support-button{
+    width: 50px;
+    height: 50px;
+    max-height: min-content;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.ui-splash-content-sender-support-button-microphone{
+    width: 50px;
+    height: 50px;
+    max-height: min-content;
+    border: 1px solid transparent;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.ui-splash-display-alert-message{
+    width: 98%;
+    height: auto;
+    max-height: min-content;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    top: -65px;
+    opacity: 0;
+}
+
+.ui-splash-display-alert-message-overview{
+    opacity: 1;
+    top: 20px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+
+.ui-splash-display-alert-message div{
+    width: 300px;
+    height: 60px;
+    max-height: min-content;
+    border: 1px solid transparent;
+    background-color: #3a3a3a;
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-family: "pingfang";
+    padding: 5px;  
+}
+
+
+@media (max-width: 855px) {
+    .ui-splash-content-header-send-message-support{
+        width: 100%;
+        height: 60px;
+        background-color: transparent;
+        position: absolute;
+        top: calc((100%) - 9.2%);
+        left: 6px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ui-splash-content-sender-support{
+        width: calc((100%) - 25%);
+        height: 40px;
+        background-color: #424242;
+        border: 1px solid #424242;
+        color: white;
+        font-size: 20px;
+        outline: none;
+    }
+    
+    .ui-splash-content-sender-support-button{
+        width: 50px;
+        height: 50px;
+        max-height: min-content;
+        top: -0.3px;
+
+    }
+}
+
+@media (max-width: 515px) {
+
+    .ui-splash-content-sender-support-button{
+        width: 45px;
+        height: 45px;
+        max-height: min-content;
+        top: -0.3px;
+    }
+
+    .ui-splash-content-sender-support-button-microphone{
+        width: 45px;
+        height: 45px;
+    }
+
+    .ui-splash-content-sender-support{
+        width: calc((100%) - 40%);
+        height: 40px;
+        background-color: #424242;
+        border: 1px solid #424242;
+        color: white;
+        font-size: 20px;
+        outline: none;
+    }
+    .ui-splash-content-message-tips1{
+        
+    }
+
+    .ui-splash-content-message-tips1 .ui-slash-convers{
+       
+    }
+
+}

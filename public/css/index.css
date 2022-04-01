@@ -1,0 +1,740 @@
+body{
+    overflow-x: hidden;
+}
+
+.ui-splash-content-header{
+    width: 100%;
+    height: auto;
+    background-color: #121614;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("../css/font/nunito/Nunito-ExtraLight.ttf");
+}
+
+.ui-splash-title-content-header{
+    width: 100%;
+    height: auto;
+    font-size: 38px;
+    font-family: "nunito";
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.ui-splash-content-header-icon{
+    font-size: 60px;
+    transform: rotate(-100deg);
+    font-weight: 700;
+    color: red;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-100deg);
+    -ms-transform: rotate(-100deg);
+    -o-transform: rotate(-100deg);
+    position: relative;
+    top: 0px;
+    animation: down 2s infinite ease alternate-reverse;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 1s;
+    -webkit-animation: down 2s infinite ease alternate-reverse;
+}
+
+@keyframes down {
+    0%{
+        top: 0px;
+    }
+    1%{
+        top: 20px;
+    }
+    50%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+}
+
+.ui-splash-content-menu-app{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.ui-splash-content-menu-app ul{
+    list-style: none;
+    display: flex;
+    width: max-content;
+    border: 1px solid transparent;
+    float: left;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
+}
+
+.ui-splash-content-bottom-signout{
+    width: 92px;
+    height: 50px;
+    position: relative;
+    float: right;
+    border-radius: 3px;
+    background-color: orange;
+    border: 1px solid orange;
+    margin-right: 5px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: "nunito";
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.ui-splash-content-bottom-signin{
+    width: 95px;
+    height: 50px;
+    position: relative;
+    float: right;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 5px;
+    color: #3535ff;
+    font-size: 15px;
+    font-family: "nunito";
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.ui-splash-content-bottom-signin a:link{
+    text-decoration: none;
+    color: #3535ff;
+}
+
+.ui-splash-content-bottom-signout:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    color: orange;
+}
+
+.ui-splash-content-bottom-signin:hover{
+    transition: 0.5s;
+    background-color: transparent;
+    border: 1px solid #3535ff;
+}
+
+.ui-splash-content-bottom-signout .fa-unlock{
+    position: relative;
+    left: -4px;
+    font-size: 17px;
+}
+
+.ui-splash-content-bottom-signin .fa-lock{
+    position: relative;
+    left: -4px;
+    font-size: 17px;
+}
+
+.ui-splash-content-menu-app ul li{
+    width: 130px;
+    height: auto;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Snippet";
+    src: url("../css/font/Snippet-Regular.ttf");
+}
+
+.ui-splash-content-menu-app ul li a{
+	position: relative;
+	font-size: 17px;
+	font-family: "Snippet";
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #ded5d5;
+    word-spacing: 12px;
+    text-decoration: none;
+}
+
+.ui-splash-content-menu-app .ui-nav-stocks-url{
+	position: relative;
+	font-size: 17px;
+	font-family: "Snippet";
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #6eff8d;
+    word-spacing: 12px;
+    text-decoration: none;
+}
+
+
+.ui-splash-content-menu-app .fa-code, .fa-universal-access, .fa-comments{
+	position: relative;
+    left: -5px;
+}
+
+@font-face {
+    font-family: "Pig";
+    src: url("../css/font/pingfang/PingFang\ SC\ Regular.ttf");
+}
+
+.ui-splash-content-bottom-start-create-account{
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "Pig";
+    border: 1px solid transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: greenyellow;
+    margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: "Noto";
+    src: url("../css/font/NovaMono-Regular.ttf");
+}
+
+.ui-splash-content-button-start-profil{
+    width: 100px;
+    height: 45px;
+    display: block;
+    border: 1px solid transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "Pig";
+    left: -5px;
+    background-color: greenyellow;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.ui-splash-content-button-start-profil a{
+    text-decoration: none;
+}
+
+.ui-splash-content-logo-shower{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-image: url("../graphics/ater3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: "Patrix";
+    src: url("../css/font/PatrickHand-Regular.ttf");
+}
+
+.ui-splash-content-logo-shower-icon:nth-child(1){
+    width: calc((100%) - 6%);
+    height: auto;
+    display: block;
+    border: 1px solid transparent;
+    font-family: "Patrix";
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    background-color: #497878cf;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffffe0;
+    animation: slow-up 3s ease infinite alternate;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation: slow-up 3s ease infinite alternate;
+    position: relative;
+    padding: 10px;
+}
+
+@keyframes slow-up {
+    from{
+        top: -10px;
+        opacity: 0.5;
+    }
+    to{
+        top: 10px;
+        background-image: url("../graphics/ater2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 1;
+    }
+}
+
+.ui-splash-content-logo-shower-icon:nth-child(2){
+    width: calc((100%) - 10%);
+    height: auto;
+    display: block;
+    border: 1px solid transparent;
+    font-family: "Patrix";
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    background-color: #ffbc00;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffffe0;
+    padding: 10px;
+}
+
+.ui-splash-content-more-tips-app{
+    font-family: "Pig";
+    padding: 4px;
+    text-align: justify;
+}
+
+.ui-splash-content-title-tips-app{
+    width: 200px;
+    height: 50px;
+    display: block;
+    border: 1px solid transparent;
+    font-family: "Patrix";
+    border-bottom-right-radius: 15px;
+    background-color: #ffbc00;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffffe0;
+    text-indent: 5px;
+}
+
+.ui-splash-content-form-map-details{
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+}
+
+.ui-splash-content-form-map-details-overview{
+    height: auto;
+}
+
+@font-face {
+    font-family: "Pontano";
+    src: url("../css/font/PontanoSans-Regular.ttf");
+}
+
+.ui-splash-content-form-error-details, .ui-splash-content-form-error-details-signup{
+    width: calc((100%) - 11%);
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    border: 1px solid #ff000082;
+    position: relative;
+    left: 30px;
+    display: flex;
+    font-family: "Pontano";
+    margin-bottom: 8px;
+    align-items: flex;
+    text-indent: 10px;
+    color: red;
+    margin-top: 5px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+
+.ui-splash-content-form-error-details-overview, .ui-splash-content-form-error-details-signup-overview{
+    transition: 0.4s;
+    opacity: 1;
+    height: auto;
+    border: 1px solid #ff000082;
+    color: red;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.ui-splash-content-form-valid-error-details-signup-overview, .ui-splash-content-form-valid-error-details-overview{
+    transition: 0.4s;
+    opacity: 1;
+    height: auto;
+    padding-top: 10px;
+    border: 1px solid green;
+    color: green;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.ui-splash-content-form-error-details .fa-exclamation-circle{
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.ui-splash-content-form-map-create{
+    width: calc((100%) - 11%);
+    border: 1px solid transparent;
+    height: auto;
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ui-splash-content-map-fields{
+    font-size: 17px;
+    font-family: "Pontano";
+}
+
+.ui-splash-content-map-fields-photo{
+    width: 335px;
+    height: 0px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.ui-splash-content-map-fields-photo-overview{
+    width: 335px;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.ui-splash-content-map-fields-button-photo{
+    width: 135px;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #7a00ff;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 15px;
+    font-family: "nunito";
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10px;
+}
+
+.ui-splash-content-map-fields-button-photo input{
+   opacity: 0;
+   height: 40px;
+   z-index: 2;
+   position: relative;
+   top: 7px;
+}
+
+.ui-splash-content-map-fields-button-photo span{
+    color: yellow;
+    opacity: 1;
+    height: 40px;
+    position: relative;
+    top: -32px;
+    left: 12px;
+    z-index: 1;
+ }
+
+.ui-splash-content-title-map-fields{
+    height: 40px;
+    border: 1px solid #7a00ff2e;
+    outline-color: #ffbc0061;
+    border-radius: 3px;
+    top: 10px;
+    color: #a348a5;
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.ui-splash-content-title-map-fields-notice{
+    height: auto;
+    border-radius: 3px;
+    top: 5px;
+    font-size: 15px;
+    color: #a348a5;
+    font-family: "nunito";
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.ui-splash-content-button-confirm-fields{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #7a00ff2e;
+    border-radius: 4px;
+    top: 10px;
+    margin-bottom: 10px;
+    font-family: "Pontano";
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #a348a5;
+    color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.ui-splash-content-footer-app{
+    font-size: 15px;
+    font-family: "Patrix";
+}
+
+.ui-splash-content-form-login-account{
+    margin-bottom: 5px;
+}
+
+.ui-splash-content-form-map-signup{
+    font-size: 25px;
+    position: relative;
+    left: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+
+.ui-splash-content-form-map-create-login{
+    width: calc((100%) - 11%);
+    border: 1px solid #80808012;
+    height: auto;
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 1px 4px 0px #00000073;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.ui-splash-content-reset-button-passwd{
+    font-family: "ping";
+    position: relative;
+    float: right;
+    margin: 5px;
+}
+
+.ui-splash-content-title-map-fields-signup{
+    height: 41px;
+    border: 1px solid #7a00ff2e;
+    outline-color: #ffbc0061;
+    border-radius: 3px;
+    position: relative;
+    left: 2px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-family: "ping";
+    width: calc((100%) - 5%);
+}
+
+@font-face {
+    font-family: "ping";
+    src: url("./font/pingfang/PingFang\ SC\ Regular.ttf");
+}
+
+.ui-splash-content-map-fields-signup{
+    font-size: 17px;
+    font-family: "ping";
+    font-weight: lighter;
+    position: relative;
+    left: 2px;
+}
+
+.ui-splash-content-button-confirm-fields-signup{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ffbc0087;
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+    margin-bottom: 10px;
+    font-family: "pontano";
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #ffbc0087;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+@media (max-width: 430px) {
+    .ui-splash-content-menu-app{
+        width: calc((100%) - 1%);
+        background-color: transparent;
+    }
+
+    .ui-splash-content-menu-app ul{
+        width: calc((100%) - 10%);
+        position: relative;
+        left: -40px;
+    }
+
+    .ui-splash-content-menu-app ul li{
+        width: calc((100%) - 30%);
+    }
+    
+    
+    .ui-splash-content-menu-app ul li a{
+        font-size: 15px;
+    }
+
+    .ui-splash-content-menu-app .ui-nav-stocks-url{
+        font-size: 16px;
+    }
+
+    .ui-splash-title-content-header{
+        width: 100%;
+        height: auto;
+    }
+
+    .ui-splash-content-header-icon{
+        font-size: 40px;
+        transform: rotate(-100deg);
+        font-weight: 700;
+        color: red;
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-100deg);
+        -ms-transform: rotate(-100deg);
+        -o-transform: rotate(-100deg);
+    }
+}
+
+@media (max-width: 342px) {
+    .ui-splash-content-menu-app{
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .ui-splash-content-menu-app ul{
+        width: calc((100%) - 2%);
+        position: relative;
+        left: -35px;
+    }
+
+    .ui-splash-content-menu-app ul li{
+        width: calc((100%) - 55%);
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .ui-splash-content-menu-app ul li a{
+        font-size: 13px;
+        padding: 1px;
+        width: max-content;
+    }
+
+    .ui-splash-content-menu-app .ui-nav-stocks-url{
+        font-size: 13px;
+    }
+
+    .ui-splash-content-bottom-signout{
+        width: 82px;
+        display: block;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    .ui-splash-title-content-header{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .ui-splash-content-form-map-create-login{
+        width: calc((100%) - 5%);
+        left: 0px;
+    }
+
+    .ui-splash-content-form-map-create{
+        width: calc((100%) - 6%);
+        left: 0px;
+    }
+
+    .ui-splash-content-form-map-create{
+        left: 10px;
+    }
+}
+
+@media (max-width: 405px) {
+    .ui-splash-content-bottom-start-create-account{
+        width: 100%;
+        margin-left: 4px;
+        font-size: 10.5px;
+    }
+
+    .ui-splash-content-form-map-create{
+        left: 10px;
+    }
+
+    .ui-splash-content-form-map-create-login{
+        width: calc((100%) - 5%);
+        left: 5px;
+        
+    }
+}

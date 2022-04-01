@@ -1,0 +1,558 @@
+.ui-splash-screen4 {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ui-splash-screen6 {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    border: 1px solid transparent;
+    flex-direction: column;
+}
+
+.ui-splash-list-many-error {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: transparent;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.ui-splash-list-many-error-overview {
+    opacity: 1;
+    transition: 0.6s;
+    overflow: hidden;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+@font-face {
+    font-family: "Nunito-Regular.ttf";
+    src: url("./font/nunito/Nunito-Regular.ttf");
+}
+
+.ui-splash-list-many-error {
+    width: auto;
+    font-size: 17px;
+    height: auto;
+    background-color: white;
+    font-family: "Nunito-Regular.ttf";
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.ui-splash-list-many-error-overview {
+    transition: 0.2s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.ui-splash-prevent-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ui-splash-add-tips {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: transparent;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.ui-splash-add-tips-overview {
+    transition: 0.3s;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ui-splash-add-tips div{
+    background-color: #447a77;
+    font-family: "Nunito-Regular.ttf";
+    padding: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: white;
+    float: left;
+}
+
+.ui-splash-steps-create-projects {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-splash-second-contact-projects {
+    width: 400px;
+    height: auto;
+    background-color: transparent;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.ui-splash-second-title-contact {
+    width: calc((100%) - 9%);
+    height: auto;
+    background-color: transparent;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: "PontanoSans-Regular.ttf";
+    src: url("../css/font/PontanoSans-Regular.ttf");
+}
+
+.ui-splash-second-title-contact span:nth-child(1) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: khaki;
+}
+
+.ui-splash-second-title-contact span:nth-child(2) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: firebrick;
+}
+
+.ui-splash-second-title-contact span:nth-child(3) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: olivedrab;
+}
+
+.ui-splash-second-title-contact span:nth-child(4) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: blanchedalmond;
+}
+
+.ui-splash-second-title-contact span:nth-child(5) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: salmon;
+}
+
+.ui-splash-second-title-contact span:nth-child(6) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: yellow;
+}
+
+.ui-splash-second-title-contact span:nth-child(1) {
+    font-family: "PontanoSans-Regular.ttf";
+    color: red;
+}
+
+@font-face {
+    font-family: "Snippet-Regular.ttf";
+    src: url("../css/font/Snippet-Regular.ttf");
+}
+
+.ui-splash-second-title-contact2 {
+    width: calc((100%) - 9%);
+    height: auto;
+    background-color: transparent;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: "Snippet-Regular.ttf";
+}
+
+@font-face {
+    font-family: "Macondo-Regular.ttf";
+    src: url("../css/font/Noto/NotoSans-Bold.ttf");
+}
+
+.ui-splash-second-title-contact3 {
+    width: calc((100%));
+    height: auto;
+    background-color: transparent;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Macondo-Regular.ttf", serif;
+    color: #000000d9;
+}
+
+.ui-splash-global-second-zone-input,
+.ui-splash-global-second-zone-input1 {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+
+.ui-splash-second-zone-input {
+    display: flex;
+    width: 99%;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-splash-second-form-input {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-splash-second-form-implements,
+.ui-splash-second-form-implements1,
+.ui-splash-second-form-implements2 {
+    width: calc((100%) - 9%);
+    height: 55px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: "Snippet-Regular.ttf";
+    text-indent: 7px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #21252121;
+    color: #24a9e8de;
+    outline-color: #24a9e859;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.ui-splash-second-form-implements-overview,
+.ui-splash-second-form-implements1-overview,
+.ui-splash-second-form-implements2-overview {
+    transition: 0.5s;
+    border: 1px solid red;
+    color: red;
+}
+
+.ui-splash-second-title-input {
+    width: max-content;
+    position: relative;
+    font-family: "Snippet-Regular.ttf";
+    background-color: white;
+    color: black;
+    z-index: 2;
+}
+
+.ui-splash-second-error-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-family: "Snippet-Regular.ttf";
+    font-size: 13px;
+    position: relative;
+    margin: 0;
+    color: red;
+    top: 2px;
+    opacity: 1;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.ui-splash-second-error-input-overview {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.ui-splash-btn-return-input {
+    width: 100px;
+    height: 45px;
+    font-family: "Snippet-Regular.ttf";
+    font-size: 17px;
+    position: relative;
+    float: left;
+    color: gray;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    left: 10px;
+}
+
+.ui-splash-btn-confirm-input {
+    width: 90px;
+    height: 40px;
+    font-family: "Snippet-Regular.ttf";
+    font-size: 17px;
+    position: relative;
+    float: right;
+    color: white;
+    margin-top: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    left: -10px;
+}
+
+.ui-splash-second-zone-input2 {
+    display: inline-block;
+    width: calc((100%) - 10%);
+    height: 300px;
+    background-color: #eee;
+    overflow: hidden;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "PatrickHand-Regular.ttf";
+    src: url("../css/font/PatrickHand-Regular.ttf");
+}
+
+.ui-splash-mode-conv1 {
+    position: relative;
+    font-size: 50px;
+    top: 20px;
+    font-family: "PatrickHand-Regular.ttf";
+    margin: 5px;
+}
+
+@font-face {
+    font-family: "ZenTokyoZoo-Regular.ttf";
+    src: url("../css/font/ZenTokyoZoo-Regular.ttf");
+}
+
+.ui-splash-mode-conv2 {
+    position: relative;
+    font-size: 50px;
+    top: 20px;
+    font-family: "ZenTokyoZoo-Regular.ttf";
+    margin: 5px;
+}
+
+.ui-splash-second-form-input2 {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.ui-splash-second-form-input2 div{
+    width: 89%;
+    display: block;
+    margin-top: 24px;
+    background-color: transparent;
+}
+
+.ui-add-tips-agency {
+    width: 65px;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #447a77;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    float: left;
+    font-size: 17px;
+}
+
+.ui-plus-tips-agency{
+    width: 65px;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #447a77;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    font-size: 17px;
+}
+
+.ui-remove-tips-agency{
+    width: 65px;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.ui-close-tips-agency{
+    width: 65px;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdbdb;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    float: left;
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.ui-splash-list-agency{
+    width: 165px;
+    height: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #447a77;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ui-splash-list-agency-overview{
+    transition: 0.3s;
+    height: auto;
+}
+
+@font-face {
+    font-family: "NotoSans-Regular.ttf";
+    src: url("../css/font/Noto/NotoSans-Regular.ttf");
+}
+
+.ui-splash-list-agency-select{
+    width: 100%;
+    height: auto;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "NotoSans-Regular.ttf";
+}
+
+.ui-splash-second-form-implements2 {
+    width: calc((100%) - 9%);
+    height: 55px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: "Snippet-Regular.ttf";
+    text-indent: 7px;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    border: 1px solid #21252121;
+    color: #24a9e8de;
+    outline-color: #24a9e8de;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.ui-splash-title-info-chef{
+    width: calc((100%) - 2%);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Snippet-Regular.ttf";
+    box-sizing: border-box;
+    position: relative;
+    word-break: keep-all;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+@media (max-width: 720px) {}
