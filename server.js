@@ -236,39 +236,6 @@ app.post("/:id", (request, response) => {
     }
 });
 
-app.post("/loggin-account", (request, response) => {
-
-    if(request.body.avatar === ""){
-        request.flash("error", "Avatart invalide");
-        response.redirect("/loggin-account");
-    }
-    console.log(request.body.avatar);
-    response.render('pagestand/index', {protect_path: "0"});
-
-
-
-    //console.log(request.body);
-    
-    let getDatas = require("./models/userData.js");
-
-    let download = require("./config/upload.js");
-    //download.uploadPicture(request.body.photo, request.body.photo);
-
-    /*
-    getDatas.getProfil(request.body, function(data){
-        if(data.length != 0){ // On vérifie qu'il n y a pas d'enregistrement dans le tableau de résultat
-            response.send(true);
-        }
-        else{
-            getDatas.createProfil(request.body);
-            response.send(false);
-        }
-    });*/
-});
-
-
-
-
 // start connexion with socket
 /*io.on('connection', function(client) {
     client.emit('updatemessage', 'data');
@@ -282,7 +249,7 @@ app.post("/loggin-account", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: '192.168.43.150',
+    host: '192.168.43.150192.168.43.150',
     port: 5000
 }, function() {
     console.log("Ecoute sur le port " + port);
