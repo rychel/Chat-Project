@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoopii</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/boite.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="initial-scale=1.0" />
+
+        <!-- script de de fonctionnalite du js et ajax -->
+        <script src=" /ajax/jquery-3.4.1.js "></script>
+    
+        <!-- script de chargement et manipulation de la page -->
+        <script src="/script-css/boite.js "></script>
+    </head>
+    <body>
+        <section class="ui-splash-content-header">
+            <div class="ui-splash-title-content-header2">
+                <span>Anonymous</span>
+                <span class="ui-splash-content-header-icon">?</span>
+                <span>Chat</span>
+            </div>
+            <div class="ui-splash-content-menu-app">
+                <ul>
+                    <li>
+                        <a href="/"><i class="fa fa-code"></i>Manage</a>
+                    </li>
+                    <li>
+                        <a href="/profil"><i class="fa fa-universal-access"></i>Profil</a>
+                    </li>
+                    <li>
+                        <% if(locals.urltoast === "/boite" || locals.urltoast === "/boite/") { %>
+                            <a href="/boite" class="ui-nav-stocks-url"><i class="fa fa-comments"></i>Messagerie</a>
+                        <% } else { %>
+                            <a href="/boite"><i class="fa fa-comments"></i>Messagerie</a>
+                        <% }%> 
+                    </li>    
+                </ul>
+                <% if(locals.statusconnexion) { %>
+                    <a href="/loggout"><button class="ui-splash-content-bottom-signout"><i class="fa fa-unlock"></i>sign out</button></a>
+                <% } %>        
+            </div>  
+        </section>
+        <section class="ui-splash-content-display-messages-global">
+            <% if(messages !== []) { %>
+                <% for(profiluser of messages) { %>
+                        <% if(profiluser.idsender == locals.statusconnexion){  %>
+                        <a href="/boite/conversation/<%= profiluser.avatar %>">
+                        <div class="ui-splash-content-display-messages-global-tips">
+                            <% if(profiluser.photo == "") { %>
+                                <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
+                            <% } else { %>
+                                <img src="<%= profiluser.photo %>" class="ui-splash-content-display-messages-sender-ico">
+                            <% } %>
+                            
+                            <span class="ui-splash-content-display-messages-tips-title"><%= profiluser.avatar %></span>
+
+                            <section class="ui-splash-content-display-messages-sender-group">
+                                <div class="ui-splash-content-wrap-title">
+                                <span class="ui-splash-content-display-messages-tips-heure"><%= profiluser.message %></span>
+                                </div>
+                                <span class="ui-splash-content-display-messages-tips-heure-form"><%= profiluser.datemessageboite %></span>
+                            </section>  
+                        </div>
+                        </a>
+                        <% } %>
+            <% } %>
+            <% } %>
+
+            <div class="ui-splash-content-title-bar-start-conversation">Connaissez-vous ?</div>
+            
+            <div class="ui-splash-content-display-messages-global-tips2">
+                <% for(profiluser of users) { %>
+                <% for(img of imagesconvers) { %>
+                    <div class="ui-splash-content-display-users-global-tips2">
+                        <% if(img.avatar != locals.statusconnexion){ %>
+                            <% if(img.avatar == profiluser.avatar){ %>
+                                <% if(img.photo == ''){ %>
+                                    <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
+                                <% } else{ %>
+                                    <img src="<%= img.photo %>" class="ui-splash-content-display-messages-sender-ico">
+                                <% } %>    
+                                <section class="ui-splash-content-display-messages-sender-group2">
+                                    <input type="text" value="<%= profiluser.avatar %>" class="ui-splash-content-temp-user" hidden>
+                                    <span class="ui-splash-content-display-messages-tips-title"><%= img.avatar %></span>
+                                    <a href="/boite/conversation/<%= img.avatar %>"><button class="ui-splash-btn-start-message-fist"> Demmarer</button></a>
+                                </section> 
+                            <% } %>
+                        <% } %>
+                    </div>
+                <% } %>
+                <% } %>
+            </div>
+            
+        </section>
+        
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopii</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="initial-scale=1.0" />
+
+        <!-- script de de fonctionnalite du js et ajax -->
+        <script src=" /ajax/jquery-3.4.1.js "></script>
+    
+        <!-- script de chargement et manipulation de la page -->
+        <script src="/script-css/index.js "></script>
+    </head>
+    <body>
+        <section class="ui-splash-content-header">
+            <div class="ui-splash-title-content-header">
+                <span>Anonymous</span>
+                <span class="ui-splash-content-header-icon">?</span>
+                <span>Tchat</span>
+            </div>
+            <div class="ui-splash-content-menu-app">
+                <ul>
+                    <li>
+                        <% if(locals.urltoast === "/") { %>
+                            <a href="/" class="ui-nav-stocks-url"><i class="fa fa-universal-access"></i>Welcome</a>
+                        <% } else { %>
+                            <a href="/"><i class="fa fa-code"></i>Manage</a>
+                        <% }%> 
+                    </li>
+                    <li>
+                        <a href="/profil"><i class="fa fa-universal-access"></i>Profil</a>
+                    </li>
+                    <li>
+                        <a href="/boite"><i class="fa fa-comments"></i>Messagerie</a>
+                    </li>    
+                </ul>
+                <% if(locals.statusconnexion) { %>
+                    <button class="ui-splash-content-bottom-signout"><i class="fa fa-unlock"></i>sign out</button>
+                <% } %>
+            </div>  
+            <% if(!locals.statusconnexion) { %>
+                <div class="ui-splash-content-bottom-start-create-account">
+                    <button class="ui-splash-content-button-start-profil">Commencer</button> par creer votre compte maintenant.
+                </div>
+            <% } %>
+            
+        </section>
+        <div class="ui-splash-content-form-map-details">
+            <div class="ui-splash-content-form-error-details">
+                <i class="fa fa-exclamation-circle"></i>
+                <span class="ui-splash-content-form-error-details-param"></span>
+            </div>
+            <form class="ui-splash-content-form-map-create" action="/" method="post" enctype="multipart/form-data"> 
+                <label class="ui-splash-content-map-fields">Avatar</label>
+                    <input type="text" class="ui-splash-content-title-map-fields" value="" name="avatar">
+                <label class="ui-splash-content-map-fields">Pseudo</label>
+                    <input type="text" class="ui-splash-content-title-map-fields" value=""> 
+                <label class="ui-splash-content-map-fields">Clé privée</label>
+                    <input type="password" class="ui-splash-content-title-map-fields" value="">
+                <label class="ui-splash-content-title-map-fields-notice">Une fois connecté vous créerez  votre avatar</label>
+
+                <input type="submit" value="Je m'inscris" class="ui-splash-content-button-confirm-fields">
+            </form>
+        </div>
+
+        <% if(!locals.statusconnexion) { %>
+            <div class="ui-splash-content-form-login-account">
+                <div class="ui-splash-content-form-error-details-signup">
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="ui-splash-content-form-error-details-param-signup"></span>
+                </div>
+                
+                <form class="ui-splash-content-form-map-create-login" action="/" method="post" enctype="multipart/form-data">
+                    <p class="ui-splash-content-form-map-signup">Connecte toi ! </p> 
+                    <label class="ui-splash-content-map-fields-signup">Avatar</label>
+                        <input type="text" class="ui-splash-content-title-map-fields-signup" value="" name="avatar">
+                    <label class="ui-splash-content-map-fields-signup">Clé privée</label>
+                        <input type="password" class="ui-splash-content-title-map-fields-signup" value="">
+                        <input type="submit" value="Youpii" class="ui-splash-content-button-confirm-fields-signup">
+                    <a href="/resetpassword" class="ui-splash-content-reset-button-passwd">mot de passe oublié ?</a>
+                </form>
+                
+                
+            </div>
+        <% } %>
+        
+        <section class="ui-splash-content-message-app-assistant">
+            <section class="ui-splash-content-logo-shower">
+                <div class="ui-splash-content-logo-shower-icon">
+                    Anonymous vous donne la possibilité d'avoir de superbe échange avec vos amis sur sa plateforme.
+                </div>
+                <div class="ui-splash-content-logo-shower-icon">
+                    Anonymous vous donne la possibilité d'avoir de superbe échange avec vos amis sur sa plateforme.
+                </div>
+            </section>
+    
+            <section class="ui-splash-content-more-tips-app">
+                <p class="ui-splash-content-title-tips-app">A propos de nous</p>
+                <p>.......En accord avec les termes du contrat de license pour pouvez échanger en toute sécurité sans rappel. Nous n'avons pas grand chose à vous dire sur nous l'assistant vous fera un plaisir de répondre à vos questions lorsque l'occasion se présentera.........</p>
+            </section>
+    
+            <section class="ui-splash-content-footer-app">
+                <p>@Copyright.Tous droits réservés 2022.</p>
+            </section>
+        </section>
+    </body>
+</html>

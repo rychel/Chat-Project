@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoopii</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/boite.css">
+        <link rel="stylesheet" type="text/css" href="/css/profil.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="initial-scale=1.0" />
+
+        <!-- script de de fonctionnalite du js et ajax -->
+        <script src=" /ajax/jquery-3.4.1.js "></script>
+
+        <!-- script de chargement et manipulation de la page -->
+        <script src="/script-css/index.js"></script>
+    
+        <!-- script de chargement et manipulation de la page -->
+        <script src="/script-css/profil.js"></script>
+    </head>
+    <body>
+        <section class="ui-splash-content-header">
+            <div class="ui-splash-title-content-header">
+                <span>Anonymous</span>
+                <span class="ui-splash-content-header-icon">?</span>
+                <span>Chat</span>
+            </div>
+            <div class="ui-splash-content-menu-app">
+                <ul>
+                    <li>
+                        <a href="/"><i class="fa fa-code"></i>Manage</a>
+                    </li>
+                    <li>
+                        <% if(locals.urltoast === "/profil" || locals.urltoast === "/profil/") { %>
+                            <a href="/profil" class="ui-nav-stocks-url"><i class="fa fa-universal-access"></i>Profil</a>
+                        <% } else { %>
+                            <a href="/profil"><i class="fa fa-universal-access"></i>Profil</a>
+                        <% }%> 
+                    </li>
+                    <li>
+                        <% if(locals.urltoast === "/boite" || locals.urltoast === "/boite/") { %>
+                            <a href="/boite" class="ui-nav-stocks-url"><i class="fa fa-comments"></i>Messagerie</a>
+                        <% } else { %>
+                            <a href="/boite"><i class="fa fa-comments"></i>Messagerie</a>
+                        <% }%> 
+                    </li>    
+                </ul>
+                <% if(locals.statusconnexion) { %>
+                    <a href="/loggout"><button class="ui-splash-content-bottom-signout"><i class="fa fa-unlock"></i>sign out</button></a>
+                <% } %>       
+            </div>  
+        </section>
+        <section class="ui-splash-content-display-messages-global">
+            <% if(locals.message == "assurez-vous que tout soit correct !") { %>
+                <div class="ui-splash-content-error-update-profile"><%= message %></div>
+            <% } %>
+            <% if(locals.message == "changement de profil réussi :) !") { %>
+                <div class="ui-splash-content-error-update-profile-valid"><%= message %></div>
+            <% } %>
+
+            <div class="ui-splash-content-error-uploading-photo">Ceci n'est pas une photo !</div>
+            <form action="/profil" method="post" enctype="multipart/form-data">
+                <p class="ui-splash-content-form-map-signup">Je personnalise mon avatar et toi ?</p> 
+            <label class="ui-splash-content-map-fields">Votre avatar ?</label>
+                <input type="text" class="ui-splash-content-title-map-fields" value="" name="avatar">
+            <label class="ui-splash-content-map-fields">Votre pseudo ?</label>
+                <input type="text" class="ui-splash-content-title-map-fields" value="" name="pseudo">
+            <label class="ui-splash-content-map-fields">A quoi ressemble votre avatar ?</label>
+                <img src="" class="ui-splash-content-map-fields-photo">
+                <div class="ui-splash-content-map-fields-button-photo">
+                    <input type="file" value="insert" class="ui-splash-content-map-fields-bupload-photo" name="images" />
+                    <span>ajouter une photo</span>
+                </div>
+                <button type="submit" class="ui-splash-content-map-fields-button-photo">soumettre</button>
+            </form>
+            
+        </section>
+        
+    </body>
+</html>

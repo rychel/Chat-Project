@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoopii</title>
+        <link rel="stylesheet" type="text/css" href="/css/message.css">
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="initial-scale=1.0" />
+
+        <!-- script de soket.io 0dgshdsdjissd -->
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- script de de fonctionnalite du js et ajax -->
+        <script src=" /ajax/jquery-3.4.1.js "></script>
+    
+        <!-- script de chargement et manipulation de la page -->
+        <script src="/script-css/message.js"></script>
+    </head>
+    <body>
+        <section class="ui-splash-content-header-sender">
+            <div class="ui-splash-title-content-header">
+               <a href="/boite"><span><i class="fa fa-angle-left"></i></span></a> 
+                <audio class="s">
+                    <source src="/sendmeet.mp3" type="audio/mpeg" hidden> 
+                </audio>
+                <audio class="r">
+                    <source src="/Deduction-Message.mp3" type="audio/mpeg" hidden> 
+                </audio>
+                    <% for (img of image) { %>
+                        <% if (img.avatar == locals.idtest) { %>
+                            <% if (img.photo == "") { %>
+                                <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-header-icon-span-sender"/>
+                            <% } else { %>
+                                <img src="<%= img.photo %>" class="ui-splash-content-header-icon-span-sender"/>
+                            <% } %>
+                        <% } %> 
+                    <% } %>   
+                <input type="text" class="ui-splash-content-push-idsend" value="<%= locals.idtest %>" hidden>
+            </div>
+        </section>
+        <section class="ui-splash-content-header-icon-span-message-support">
+            <div class="ui-splash-content-message-docs"> 
+                <% for(message of messages) { %>
+                    <% if(locals.idtest == message.idreceiver) { %>
+                        <br>
+                        <br>
+                        <span class="ui-splash-content-date-message2"><%= message.heure %></span>
+                        <div class="ui-splash-content-message-tips2">
+                            <span class="ui-slash-convers"><%= message.message %></span>
+                        </div>
+                    <% } else { %>
+                        <span class="ui-splash-content-date-message1"><%= message.datemessagereseiver %></span>
+                        <div class="ui-splash-content-message-tips1">
+                            <span class="ui-slash-convers"><%= message.message %></span>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    <% } %>
+                    <% } %>
+            </div>
+            
+        </section>
+        <section class="ui-splash-content-header-send-message-support">
+            <form method="post" action="/boite/conversation">
+                <input type="text" class="ui-splash-content-sender-support" id="backto"> 
+               <button class="ui-splash-content-sender-support-button"><i class="fa fa-paper-plane"></i></button>
+               <button class="ui-splash-content-sender-support-button-microphone"><i class="fa fa-microphone"></i></button>
+            </form>
+        </section>
+        <section class="ui-splash-display-alert-message">
+            <div>Cette fonctionnalité n'est pas encore disponible<i class="fa fa-exclamation-circle"></i></span>
+        </section>
+        
+    </body>
+</html>
