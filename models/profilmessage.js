@@ -161,41 +161,4 @@ class objectProfilMessage {
   }
 
 }
-
-/*
-
-
-  static loadNoProfilMAll(dataset, callback, callhers){
-    connexion.query(
-      "SELECT DISTINCT avatar FROM users, messageAt WHERE users.avatar != messageAt.idreceiver AND users.avatar != messageAt.idsender",
-        [dataset, dataset, dataset],
-        function (erreur, resultat) {
-          if (erreur) {
-            throw erreur;
-          }
-          console.log("LoadNo : " + resultat);
-          console.log("taille : " + resultat.length);
-  
-          if(resultat.length == 0){
-            callback([]);
-          }
-          else{
-            for(let x of resultat){
-              x.datemessage = moment(x.datemessage).localeData().relativeTime(4, false, 'mm');
-            }
-            callhers(resultat);
-          }
-        }
-      );
-
-SELECT id,
-max(case WHEN idsender = 'd' THEN idsender END) IDSENDER,
-max(case WHEN idreceiver = 'f' THEN idreceiver END) IDRECEIVER,
-max(case WHEN idsender = 'd' THEN message END) MESSAGE,
-max(case WHEN idreceiver = 'f' THEN datemessage END) DATEMESSAGE
-
-
-FROM `messageat`; GROUP BY idsender, idreceiver;
-  }
-*/
 module.exports = objectProfilMessage;
