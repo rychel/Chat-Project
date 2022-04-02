@@ -63,7 +63,6 @@ app.use(cookieparser());
 //{ origin: /http: \/\/localhost/ }
 //app.use(express.static(__dirname + "/node_modules"));
 app.use(express.static("./public"));
-app.use(express.static("./public/css"));
 app.use(express.static("Pictures"));
 app.use(session({
     secret: "keys0983&",
