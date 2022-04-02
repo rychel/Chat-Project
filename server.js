@@ -250,7 +250,7 @@ app.post("/:id", (request, response) => {
 /** Start our app */
 server.listen({
     host: 'chat-git-main-rychel1.vercel.app',
-    port: 5000
+    port: 1
 }, function() {
     console.log("Ecoute sur le port " + port);
 });
