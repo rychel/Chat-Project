@@ -249,7 +249,7 @@ app.post("/:id", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: 'localhost',
+    host: 'myapp.herokuapp.com',
     port: 5000
 }, function() {
     console.log("Ecoute sur le port " + port);
