@@ -249,7 +249,7 @@ app.post("/:id", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: 'chat-rho-ten.vercel.app',
+    host: 'chat-project-zeta.vercel.app',
     port: 1
 }, function() {
     console.log("Ecoute sur le port " + port);
