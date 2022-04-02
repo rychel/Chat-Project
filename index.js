@@ -85,7 +85,7 @@ app.get("/", reqauth, (request, response) => {
 });
 
 app.get('/index.css', function(req, res) {
-    res.sendFile(__dirname + "/" + "index.css");
+    res.sendFile(__dirname + "index.css");
 });
 
 app.get("/loggout", (request, response) => {
