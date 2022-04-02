@@ -249,7 +249,7 @@ app.post("/:id", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: 'myapp.herokuapp.com',
+    host: 'chat-git-main-rychel1.vercel.app',
     port: 5000
 }, function() {
     console.log("Ecoute sur le port " + port);
