@@ -25,6 +25,7 @@
         "node-audiorecorder": "^1.1.4",
         "nodemon": "^2.0.14",
         "query": "^0.2.0",
-        "socket.io": "^4.4.0"
+        "socket.io": "^4.4.0",
+        "vercel": "^24.0.1"
     }
 }
