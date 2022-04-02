@@ -11,6 +11,7 @@ const { NULL } = require("mysql/lib/protocol/constants/types");
 const multer = require("multer");
 const cookieparser = require('cookie-parser');
 const jwt = require("jsonwebtoken");
+const path = require("path");
 let {reqauth} = require("./middelwares/authuser");
 let Token = require("./config/Token.js");
 const max = 3 * 24 * 60 * 60;
@@ -76,10 +77,11 @@ app.options("*", cors());
 
 /** Moteur de template de App */
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views'));
 
 /** Routes App */
 app.get("/", reqauth, (request, response) => {
-    response.render("./views/pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
+    response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
 });
 
 app.get("/loggout", (request, response) => {
