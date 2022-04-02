@@ -79,7 +79,7 @@ app.set("view engine", "ejs");
 
 /** Routes App */
 app.get("/", reqauth, (request, response) => {
-    response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
+    response.render("./views/pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
 });
 
 app.get("/loggout", (request, response) => {
