@@ -84,10 +84,6 @@ app.get("/", reqauth, (request, response) => {
     response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
 });
 
-app.get('/index.css', function(req, res) {
-    res.sendFile(__dirname + "index.css");
-});
-
 app.get("/loggout", (request, response) => {
     response.cookie('jwt' , '', {maxAge: 1});
     response.redirect("/");
