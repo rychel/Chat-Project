@@ -63,6 +63,7 @@ app.use(cookieparser());
 //{ origin: /http: \/\/localhost/ }
 //app.use(express.static(__dirname + "/node_modules"));
 app.use(express.static("./public"));
+app.use(express.static("./public/css"));
 app.use(express.static("Pictures"));
 app.use(session({
     secret: "keys0983&",
@@ -82,6 +83,10 @@ app.set('views', path.join(__dirname, 'views'));
 /** Routes App */
 app.get("/", reqauth, (request, response) => {
     response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
+});
+
+app.get('/index.css', function(req, res) {
+    res.sendFile(__dirname + "/" + "index.css");
 });
 
 app.get("/loggout", (request, response) => {
