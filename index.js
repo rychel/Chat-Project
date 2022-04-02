@@ -248,9 +248,6 @@ app.post("/:id", (request, response) => {
 
 
 /** Start our app */
-server.listen({
-    host: 'rychel.github.io',
-    port: 1
-}, function() {
+server.listen(port, function() {
     console.log("Ecoute sur le port " + port);
 });
