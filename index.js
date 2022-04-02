@@ -249,7 +249,7 @@ app.post("/:id", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: 'chat-project-zeta.vercel.app',
+    host: 'rychel.github.io/Chat-Project/',
     port: 1
 }, function() {
     console.log("Ecoute sur le port " + port);
