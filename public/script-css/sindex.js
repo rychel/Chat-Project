@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     function request(avatar, pseudo, pass) {
         return $.ajax({
-            url: "https://sidej.herokuapp.com/signup",
+            url: "https://localhost/signup",
             type: "POST",
             data: {
                 avatar: avatar,
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     function login(avatar, pass){
         return $.ajax({
-            url: "https://sidej.herokuapp.com/login",
+            url: "http://localhost/login",
             type: "POST",
             data: {
                 avatar: avatar,
