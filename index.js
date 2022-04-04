@@ -16,9 +16,6 @@ let {reqauth} = require("./middelwares/authuser");
 let Token = require("./config/Token.js");
 const max = 3 * 24 * 60 * 60;
 
-let globalMessagesend;
-
-
 const storage = multer.diskStorage({
     destination: function(request, file, cb){
         cb(null, "./Pictures/");
@@ -192,7 +189,7 @@ app.post("/profil", reqauth, (request, response) => {
     upload(request, response, async (error) => {
        if(request.file !== undefined && request.body.avatar != "" && request.body.pseudo != ""){
         request.session.error = "changement de profil réussi :) !";
-        request.body.images = "http://localhost:5000/" + request.file.filename;
+        request.body.images = "http://localhost:" + port + "/" + request.file.filename;
         
         getDatas.updateprofil(request.body, request.session.user.id, function(data){
             //on recréee un nouveau token avec le nouvel avatar
@@ -237,17 +234,6 @@ app.post("/:id", (request, response) => {
         });
     }
 });
-
-// start connexion with socket
-/*io.on('connection', function(client) {
-    client.emit('updatemessage', 'data');
-
-    client.on('join', function(data) {
-        
-    });
-});*/
-
-
 
 /** Start our app */
 server.listen(port, function() {
