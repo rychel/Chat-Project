@@ -42,8 +42,9 @@ $(document).ready(function() {
                     return false;
                 }
             },
-            error: function(e){
-                console.log(e)
+            error: function(resultat, statut, erreur){
+                console.log(statut);
+                console.log(erreur);
             },
             complete: function (xhr) {
                 console.log(xhr.status);
