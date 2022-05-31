@@ -554,4 +554,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-![alt tag](http://localhost/to/1.jpg)
+<img src="/Pictures/1.png" alt="My cool logo"/>

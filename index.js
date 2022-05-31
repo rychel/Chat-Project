@@ -78,6 +78,21 @@ app.set('views', path.join(__dirname, 'views'));
 
 /** Routes App */
 app.get("/", reqauth, (request, response) => {
+    const mysql = require('mysql');
+
+const connexion = mysql.createConnection({
+    host: 'sql100.epizy.com',
+    user: 'epiz_31850629',
+    password: 'Laure2003.',
+    database: 'epiz_31850629_anonymous'
+});
+
+connexion.connect((erreur) => {
+    if (erreur){
+        return console.error('error: ' + erreur.message);
+    }
+    console.log("ok");
+});
     response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
 });
 
@@ -236,6 +251,6 @@ app.post("/:id", (request, response) => {
 });
 
 /** Start our app */
-server.listen(port, function() {
+server.listen(port, '0.0.0.0' , function() {
     console.log("Ecoute sur le port : " + port);
 });
