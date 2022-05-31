@@ -253,7 +253,7 @@ app.post("/:id", (request, response) => {
 
 /** Start our app */
 server.listen({
-    host: 'https://anonymous-cha.herokuapp.com/',
+    host: '0.0.0.0',
     port: 5000
 }, function() {
     console.log("Ecoute sur le port : " + port);
