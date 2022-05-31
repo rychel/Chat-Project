@@ -92,8 +92,9 @@ connexion.connect((erreur) => {
         return console.error('error: ' + erreur.message);
     }
     console.log("ok");
+    response.send('ok');
 });
-    response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
+    //response.render("pagestand/index", {statusconnexion: request.session.user.id, urltoast: request.path});
 });
 
 app.get("/loggout", (request, response) => {
@@ -251,6 +252,9 @@ app.post("/:id", (request, response) => {
 });
 
 /** Start our app */
-server.listen(port, '0.0.0.0' , function() {
+server.listen({
+    host: 'https://anonymous-cha.herokuapp.com/',
+    port: 5000
+}, function() {
     console.log("Ecoute sur le port : " + port);
 });
