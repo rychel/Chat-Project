@@ -252,9 +252,6 @@ app.post("/:id", (request, response) => {
 });
 
 /** Start our app */
-server.listen({
-    host: '0.0.0.0',
-    port: 5000
-}, function() {
+server.listen(port, function() {
     console.log("Ecoute sur le port : " + port);
 });
