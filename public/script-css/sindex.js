@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     function request(avatar, pseudo, pass) {
         return $.ajax({
-            url: "https://anonymous-cha.herokuapp.com/signup",
+            url: "http://localhost:5000/signup",
             type: "POST",
             data: {
                 avatar: avatar,
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     function login(avatar, pass){
         return $.ajax({
-            url: "https://anonymous-cha.herokuapp.com/login",
+            url: "http://localhost:5000/login",
             type: "POST",
             data: {
                 avatar: avatar,

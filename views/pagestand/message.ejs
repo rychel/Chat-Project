@@ -28,7 +28,7 @@
                     <% for (img of image) { %>
                         <% if (img.avatar == locals.idtest) { %>
                             <% if (img.photo == "") { %>
-                                <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-header-icon-span-sender"/>
+                                <img src="http://localhost:5000/avis.jpg" class="ui-splash-content-header-icon-span-sender"/>
                             <% } else { %>
                                 <img src="<%= img.photo %>" class="ui-splash-content-header-icon-span-sender"/>
                             <% } %>

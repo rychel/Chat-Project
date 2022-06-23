@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     function request(idreceiver, message, date, heure) {
         return $.ajax({
-            url: "http://192.168.43.150:5000/boite/conversation/"+idreceiver,
+            url: "http://localhost:5000/boite/conversation/"+idreceiver,
             type: "POST",
             data: {
                 idreceiver: idreceiver,
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     function requestDisplay(idreceiver) {
         return $.ajax({
-            url: "http://192.168.43.150:5000/boite/conversation/"+idreceiver,
+            url: "http://localhost:5000/boite/conversation/"+idreceiver,
             type: "GET",
             success: function (data, textStatus, xhr) {
                

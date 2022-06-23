@@ -48,7 +48,7 @@
                         <a href="/boite/conversation/<%= profiluser.avatar %>">
                         <div class="ui-splash-content-display-messages-global-tips">
                             <% if(profiluser.photo == "") { %>
-                                <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
+                                <img src="http://localhost:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
                             <% } else { %>
                                 <img src="<%= profiluser.photo %>" class="ui-splash-content-display-messages-sender-ico">
                             <% } %>
@@ -76,7 +76,7 @@
                         <% if(img.avatar != locals.statusconnexion){ %>
                             <% if(img.avatar == profiluser.avatar){ %>
                                 <% if(img.photo == ''){ %>
-                                    <img src="http://192.168.43.150:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
+                                    <img src="http://localhost:5000/avis.jpg" class="ui-splash-content-display-messages-sender-ico">
                                 <% } else{ %>
                                     <img src="<%= img.photo %>" class="ui-splash-content-display-messages-sender-ico">
                                 <% } %>    
